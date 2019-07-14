@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import path,include
 
 from DataAnalizing.api.viewsets import DataAnalizingViewSet
+from Email.api.viewsets import EmailViewSet
 
 from rest_framework import routers
 router = routers.DefaultRouter()
 
 router.register(r"Data_Analizing",DataAnalizingViewSet) 
+router.register(r"Email",EmailViewSet) 
 
 
 urlpatterns = [
